@@ -21,7 +21,7 @@ const ViewTeacher = () => {
 <Card sx={{ maxWidth: 345 }} className='card'>
       <CardContent className='CardContent'>
         <Typography gutterBottom variant="h5" component="div">
-          Fist Name : {selectedTeacher.firstname}
+          First Name : {selectedTeacher.firstname}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Last Name : {selectedTeacher.lastname}

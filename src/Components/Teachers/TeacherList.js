@@ -38,7 +38,7 @@ const TeacherList = () => {
     <Card sx={{ maxWidth: 345 }} key={key} className='card'>
       <CardContent className='CardContent'>
         <Typography gutterBottom variant="h5" component="div">
-          Fist Name : {items.firstname}
+          First Name : {items.firstname}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Last Name : {items.lastname}
