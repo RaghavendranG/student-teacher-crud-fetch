@@ -2,37 +2,67 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toolbar{
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  background-color: black !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn:hover{
+background-color: azure !important;
+color: black;
+}
+
+.dashboard-btn{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.studentList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  width: 350px;
+  margin-left: 28px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.card-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.base{
+  background: #757F9A;  
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A); 
+background: linear-gradient(to right, #D7DDE8, #757F9A);
+height : 130vh;
+}
+
+.CardContent{
+background-color: #D7DDE8;
+}
+
+.add-btn{
+  margin: 5px;
+}
+
+
+.add-student{
+  margin: 10px;
+}
+
+.view{
+  display: flex;
+  justify-content: center;
 }
