@@ -20,11 +20,11 @@ function App() {
   useEffect(()=>{
     const getStudents = async() => {
       try {
-        const response = await fetch("https://6353a57accce2f8c02fa4329.mockapi.io/student",{
+        const response = await fetch("http://localhost:5000/students",{
           method : "GET"
         })
         const data = await response.json()
-        setStudentData(data)
+        setStudentData(data.data)
       } catch (error) {
         console.log(error);
       }
@@ -32,11 +32,11 @@ function App() {
 
     const getTeacher = async() => {
       try {
-        const response = await fetch("http://localhost:5000/students",{
+        const response = await fetch("https://6353a57accce2f8c02fa4329.mockapi.io/teacher",{
           method : "GET"
         })
         const data = await response.json()
-        setTeacherData(data.data)
+        setTeacherData(data)
       } catch (error) {
         console.log(error);
       }
