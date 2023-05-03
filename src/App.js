@@ -32,11 +32,11 @@ function App() {
 
     const getTeacher = async() => {
       try {
-        const response = await fetch("https://6353a57accce2f8c02fa4329.mockapi.io/teacher",{
+        const response = await fetch("http://localhost:5000/students",{
           method : "GET"
         })
         const data = await response.json()
-        setTeacherData(data)
+        setTeacherData(data.data)
       } catch (error) {
         console.log(error);
       }
