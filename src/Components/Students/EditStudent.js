@@ -42,7 +42,7 @@ const EditStudent = () => {
       };
 
       const response = await fetch(
-        `https://6353a57accce2f8c02fa4329.mockapi.io/student/${id}`,
+        `https://nodemongo-ten.vercel.app/students/${id}`,
         {
           method: "PUT",
           body: JSON.stringify(updatedStudent),

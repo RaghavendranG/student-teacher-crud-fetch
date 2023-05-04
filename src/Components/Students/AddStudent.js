@@ -25,7 +25,7 @@ const AddStudent = () => {
         department,
       };
   
-      const response = await fetch("https://6353a57accce2f8c02fa4329.mockapi.io/student", {
+      const response = await fetch("https://nodemongo-ten.vercel.app/students", {
         method : "POST",
         body : JSON.stringify(newStudentData),
         headers : {
