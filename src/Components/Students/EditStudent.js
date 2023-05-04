@@ -16,12 +16,12 @@ const EditStudent = () => {
 
   const { id } = useParams();
 
-  const studentIndex = studentData.findIndex((item) => item.id === id);
+  const studentIndex = studentData.findIndex((item) => item._id === id);
 
   const selectedStudent = studentData[studentIndex];
 
   useEffect(() => {
-    setIdx(selectedStudent.id);
+    setIdx(selectedStudent._id);
     setFirstName(selectedStudent.firstname);
     setLastName(selectedStudent.lastname);
     setGender(selectedStudent.gender);
@@ -33,7 +33,7 @@ const EditStudent = () => {
     event.preventDefault();
     try {
       const updatedStudent = {
-        id: idx,
+        _id: idx,
         firstname,
         lastname,
         gender,

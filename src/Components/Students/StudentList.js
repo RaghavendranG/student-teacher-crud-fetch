@@ -25,7 +25,7 @@ const StudentList = () => {
       const data = await response.json();
 
       console.log(data);
-      const deletedData = studentData.filter((items) => items.id !== id);
+      const deletedData = studentData.filter((items) => items._id !== id);
 
       setStudentData(deletedData);
     } catch (error) {}
@@ -60,7 +60,7 @@ const StudentList = () => {
                 size="small"
                 variant="contained"
                 color="secondary"
-                onClick={() => history.push(`/edit-student/${items.id}`)}
+                onClick={() => history.push(`/edit-student/${items._id}`)}
               >
                 Edit
               </Button>
@@ -68,7 +68,7 @@ const StudentList = () => {
                 size="small"
                 variant="contained"
                 color="error"
-                onClick={() => removeData(items.id)}
+                onClick={() => removeData(items._id)}
               >
                 Delete
               </Button>
