@@ -20,7 +20,7 @@ function App() {
   useEffect(()=>{
     const getStudents = async() => {
       try {
-        const response = await fetch("http://localhost:5000/students",{
+        const response = await fetch("https://nodemongo-ten.vercel.app/students",{
           method : "GET"
         })
         const data = await response.json()
