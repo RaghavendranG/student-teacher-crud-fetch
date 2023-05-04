@@ -12,9 +12,9 @@ const Base = ({ title, subtitle, children }) => {
           <Button className="btn" color="inherit" onClick={() => history.push('/')}>
             Dashboard
           </Button>
-          <Button className="btn" color="inherit" onClick={() => history.push('/teacher')}>
+          {/* <Button className="btn" color="inherit" onClick={() => history.push('/teacher')}>
             Teacher List
-          </Button>
+          </Button> */}
           <Button className="btn" color="inherit" onClick={() => history.push('/student')}>
             Student List
           </Button>

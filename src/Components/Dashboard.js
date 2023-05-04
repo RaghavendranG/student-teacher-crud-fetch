@@ -20,9 +20,9 @@ const Dashboard = () => {
           <Button className="btn" variant="contained" onClick={() => history.push('/student')}>
             Student List
           </Button>
-          <Button className="btn" variant="contained" onClick={() => history.push('/teacher')}>
+          {/* <Button className="btn" variant="contained" onClick={() => history.push('/teacher')}>
             Teacher List
-          </Button>
+          </Button> */}
         </div>
       </div>
     </Base>
